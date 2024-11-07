@@ -4,7 +4,10 @@ import { AppPropsWithLayout } from "../types"
 declare global {
   interface Window {
     turnstile?: {
-      render: (id: string, options: { sitekey: string; callback: (token: string) => void }) => void
+      render: (
+        id: string,
+        options: { sitekey: string; callback: (token: string) => void }
+      ) => void
     }
   }
 }
@@ -21,11 +24,13 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
   const [isVerify, setVerify] = useState(false)
 
   const handleVerify = async (token: string) => {
-    if (token) {
-      setVerify(true)
-    } else {
-      setVerify(false)
-    }
+    setTimeout(() => {
+      if (token) {
+        setVerify(true)
+      } else {
+        setVerify(false)
+      }
+    }, 500)
   }
   const isProduction = CONFIG.isProd
   return (
