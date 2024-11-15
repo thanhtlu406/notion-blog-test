@@ -68,7 +68,7 @@ const CONFIG = {
       appid: "", // Embed Code -> data-app-id value
     },
   },
-  isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
+  isProd: true, // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
   revalidateTime: 60, // revalidate time for [slug], index
   NEXT_PUBLIC_TURNSTILE_SITE_KEY: "0x4AAAAAAAzS4fY8yBhNiveP"
 }
