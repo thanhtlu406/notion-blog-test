@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://thanhnv.vercel.app
-
-# Sitemaps
-Sitemap: https://thanhnv.vercel.app/sitemap.xml
