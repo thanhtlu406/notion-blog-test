@@ -30,7 +30,7 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
       } else {
         setVerify(false)
       }
-    }, 1000)
+    }, 800)
   }
   const isProduction = CONFIG.isProd
   return (
